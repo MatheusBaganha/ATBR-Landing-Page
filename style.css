@@ -258,10 +258,6 @@ img {
     left: -4px;   
 }
 
-.pergunta-lista {
-    list-style: none;
-}
-
 .cursos-itens p {
     padding-bottom: 30px;
     align-items: flex-end;
@@ -343,6 +339,10 @@ img {
     padding: 30px;
     margin-bottom: 30px;
     position: relative;
+}
+
+.pergunta-lista {
+    list-style: none;
 }
 
 .pergunta::after {
@@ -846,10 +846,10 @@ label {
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
     .enviar, .email {
         padding: 5px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         flex-wrap: nowrap;
     }
 
