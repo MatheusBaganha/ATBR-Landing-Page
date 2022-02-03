@@ -237,8 +237,8 @@ img {
 
 .cursos-itens {
     background-image: linear-gradient(to bottom, #E2E7FF, #d7ddee);
-    border: 1px solid #0c15462f;
-    box-shadow: 2px 2px 5px #0e163f18;
+    border: 1px solid #bec3dd;
+    box-shadow: 1px 1px 3px #4f5c9e54;
     border-radius: 3px;
     padding: 40px;
     margin: 60px 30px;
@@ -325,16 +325,16 @@ img {
 }
 
 .pergunta {
-    border: 1px solid #a1a7c5;
-    box-shadow: 2px 2px 2px #7485d834;
+    border: 1px solid #bec3dd;
+    box-shadow: 1px 1px 3px #7485d834;
     border-radius: 3px;
     background-color: #E2E7FF;
     flex: 1 1 auto;
     color: #000628;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 1.3rem;
-    max-width: calc(100vw - 280px);
+    font-size: 1.2rem;
+    width: 79vw;
     margin: 0 60px 0 auto;
     padding: 30px;
     margin-bottom: 30px;
@@ -345,16 +345,20 @@ img {
     list-style: none;
 }
 
+
 .pergunta::after {
     content: url(icones/expandir-mais.svg);
     display: block;
     width: 32px;
+    float: right;
     position: absolute;
     right: 20px;
     top: 30px;
+    transition: 0.3s ease;
 }
 
 .pergunta p {
+    display: none;
     font-size: 1.1rem;
     font-weight: normal;
     color: #000628;
@@ -366,12 +370,39 @@ img {
     padding-right: 5px;
     box-sizing: border-box;
     margin-right: 50px;
+    margin-left: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.pergunta::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 5px;
+    background-color: #5C68A9;
+    border-radius: 2px;
+    position: absolute;
+    top: 40px;
+    left: 20px;   
 }
 
 .pergunta h3:first-child {
     margin-right: 20px;
 }
 
+#duvidas input {
+    display: none;
+}
+
+#duvidas input:checked + .pergunta p {
+    display: block; 
+}
+
+#duvidas input:checked + .pergunta::after {
+    transform: rotate(180deg);
+    right: 30px;
+}
 
 /*Matricula*/
 
@@ -543,16 +574,78 @@ label {
 /*Alterações Variadas*/
 
 
-
-@media (max-width: 360px) {
-    .pergunta {
-        width: 250px;
-        box-sizing: border-box;    
+@media (min-width: 2000px) {
+    .detalhe, .detalhe2 {
+        display: inline;
+        margin: 0 auto 0 100px;
+        font-size: 7rem;
+        max-width: 100ch;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: #d3d6ecce;    
     }
 
-    .pergunta h3 {
-        padding-right: 20px;
-        display: block;
+    #cursos {
+        margin-left: -20px;
+    }
+
+    .cursos-itens::after {
+        content: "</>";
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        right: 80px;
+        font-size: 7rem;
+        color: #AAB3E0;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    #sobre {
+        justify-content: flex-start;
+    }
+
+    .corpo2 {
+        width: 100vw;
+    }
+
+    .imagem2 {
+        width: 100%;
+    }
+
+    .cursos-itens {
+        max-width: 50vw;
+    }
+}
+
+
+@media (min-width: 850px)  {
+    #sobre {
+        margin-left: -70px;
+    }
+
+    .cursos-itens {
+        padding: -10px;
+    }
+
+    .botao2 {
+        margin: 0 auto;
+        max-width: 120px;
+        font-size: 1rem;
+        text-align: center;     
+    }
+}
+
+
+@media (min-width: 526px) and (max-width: 776px) {
+    .icone-footer {
+        display: none;
+    }
+
+    .info {
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -569,67 +662,20 @@ label {
         text-align: center;
         margin-top: -30px;
         margin-right: -50px;
+        display: block;
     }
 }
 
 
-@media (min-width: 526px) and (max-width: 776px) {
-
-    .icone-footer {
-        display: none;
+@media (max-width: 360px) {
+    .pergunta {
+        width: 250px;
+        box-sizing: border-box;    
     }
 
-    .info {
-        margin: 0;
-        padding: 0;
-    }
-}
-
-
-@media (min-width: 2000px) {
-
-    .detalhe, .detalhe2 {
-        display: inline;
-        margin: 0 auto 0 100px;
-        font-size: 7rem;
-        max-width: 100ch;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        color: #d3d6ecce;    
-    }
-
-    #cursos {
-        margin-left: -20px;
-    }
-}
-
-
-@media (min-width: 1400px) {
-    #sobre {
-        justify-content: flex-start;
-    }
-}
-
-@media (max-width: 400px) {
-    .botao {
-         display: block;
-    } 
-}
-
-@media (min-width: 850px)  {
-    #sobre {
-        margin-left: -70px;
-    }
-
-    .cursos-itens {
-        padding: -10px;
-    }
-
-    .botao2 {
-        margin: 0 auto;
-        max-width: 120px;
-        font-size: 1rem;
-        text-align: center;       
+    .pergunta h3 {
+        padding-right: 20px;
+        display: block;
     }
 }
 
@@ -642,30 +688,22 @@ label {
 }
 
 
+/*Necessário sobrescrever os outros medias*/
+
 @media (min-width: 1280px) {
     #sobre {
         margin-left: 10px;
     }
 }
 
-
-@media (min-width: 1600px) {
-
-    .corpo2 {
-        width: 100vw;
-    }
-
-    .imagem2 {
-        width: 100%;
-    }
-
-    .cursos-itens {
-        max-width: 50vw;
+@media (min-width: 900px) and (max-width: 1280px) {
+    #sobre {
+        margin-left: -150px;
     }
 }
 
 
-/*Mobile*/
+/*Mobile Geral*/
 
 @media (max-width: 850px) {
 
@@ -846,6 +884,8 @@ label {
 }
 
 
+/*Abaixo dos 380px*/
+
 @media (max-width: 380px) {
     .enviar, .email {
         padding: 5px;
@@ -864,4 +904,17 @@ label {
     .matricula {
         text-align: center;
         margin: 0 auto;
+    }
+
+    .pergunta::before {
+        top: 22px;
+        left: 10px;   
+        width: 10px;
+        height: 4px;
+    }
+
+    .p-dois::after {
+        right: 20px;
+        top: 15px;    
+    }
 }

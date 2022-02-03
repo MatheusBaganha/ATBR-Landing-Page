@@ -87,41 +87,56 @@
     
     <aside id="duvidas">
         <div class="corpo3">
-            <h2>DUVÍDAS</h2>
+            <h2>DÚVIDAS</h2>
             <p>Abaixo, estão algumas perguntas frequentes que recebemos, já respondidas.</p>
         </div>
         <ul class="pergunta-lista">
             <li>
+                <input type="checkbox" id="pergunta1">
                 <div class="pergunta">
-                    <h3>Não tenho internet nem computador, posso me matricular?</h3>
+                    <label for="pergunta1">
+                        <h3 role="button" tabindex="0">Não tenho computador, posso me matricular?</h3>
+                    </label>
                     <p>Sim! Nós da ATBR ajudamos todos os nossos alunos a terem a acessibilidade necessária para os estudos. Distribuimos a internet e os notebooks gratuitamente.</p>
                 </div>
             </li>
             
             <li>
-                <div class="pergunta">
-                    <h3>Eu vou ter que pagar algo?</h3>
+                <input type="checkbox" id="pergunta2">
+                <div class="pergunta p-dois">
+                    <label for="pergunta2">
+                        <h3 role="button" tabindex="0">Eu vou ter que pagar algo?</h3>
+                    </label>
                     <p>Não, os cursos são <strong>totalmente gratuitos</strong>. É preciso apenas de internet e computadores, e garantiremos que todos tenham o mesmo. </p>
                 </div>
             </li>
             
             <li>
+                <input type="checkbox" id="pergunta3">
                 <div class="pergunta">
-                    <h3>Qual a duração total do curso?</h3>
+                    <label for="pergunta3">
+                        <h3 role="button" tabindex="0">Qual a duração total do curso?</h3>
+                    </label>
                     <p>Cada curso tem uma duração média de 1 ano. Sendo que os alunos que mais se destacarem irão receber um treinamento adicional de 3 meses e terão a chance de concorrer a vagas de empregos na área de T.I que nós iremos oferecer.</p>
                 </div>
             </li>
 
             <li>
+                <input type="checkbox" id="pergunta4">
                 <div class="pergunta">
-                    <h3>Quais os horários disponiveis para as aulas?</h3>
+                    <label for="pergunta4">
+                        <h3 role="button" tabindex="0">Quais os horários disponiveis?</h3>
+                    </label>
                     <p>As aulas de Front-End serão das 08:00 até as 12:00. As aulas de Back-End serão das 12:00 até as 16:00. Ambas são de segunda a sexta.</p>
                 </div>
             </li>
 
             <li>
+                <input type="checkbox" id="pergunta5">
                 <div class="pergunta">
-                    <h3>Posso ter aulas presenciais?</h3>
+                    <label for="pergunta5">
+                        <h3 role="button" tabindex="0">Posso ter aulas presenciais?</h3>
+                    </label>
                     <p>Sim. Após você enviar seu e-mail, iremos disponibilizar todo dia o link das aulas que serão ao vivo. Porém para presencial, você pode ligar para o nosso número de contato que está disponivel no fundo do site e veremos se há vaga disponivel.</p>
                 </div>
             </li>
@@ -132,10 +147,10 @@
         <div class="corpo4">
             <h2>MATRICULE-SE</h2>
             <p>Envie aqui o seu endereço de e-mail para ter acesso a todas as aulas gratuitamente.</p>
-            <form action="#">
+            <form action="#" method="post">
                 <label for="email">
-                    <input type="email" name="email" class="email" id="email" placeholder="E-mail" maxlength="70" aria-label="E-mail">
-                    <button class="enviar" aria-label="Enviar">ENVIAR</button>
+                    <input type="email" name="email" class="email" id="email" placeholder="E-mail" maxlength="70" required>
+                    <button class="enviar">ENVIAR</button>
                 </label>
             </form>
         </div>
@@ -152,11 +167,11 @@
             <p class="numero">11 99999-9999</p><br>
             <p>emailcontato@atbr.com</p>
             <div class="rede-social-container">
-                <a href="https://www.facebook.com/" target="_blank"><span class="rede-social"><img src="icones/facebook.svg" alt="facebook"></span></a>
+                <a href="https://www.facebook.com/" target="_blank"><span class="rede-social"><img src="icones/facebook.svg" alt="facebook" aria-label="Siga o Facebook da ATBR"></span></a>
                         
-                <a href="https://www.instagram.com/" target="_blank"><span class="rede-social"><img src="icones/instagram.svg" alt="instagram"></span></a>
+                <a href="https://www.instagram.com/" target="_blank"><span class="rede-social"><img src="icones/instagram.svg" alt="instagram" aria-label="Siga o Instagram da ATBR"></span></a>
                         
-                <a href="https://www.twitter.com/" target="_blank"><span class="rede-social"><img src="icones/twitter.svg" alt="twitter"></span></a>
+                <a href="https://www.twitter.com/" target="_blank"><span class="rede-social"><img src="icones/twitter.svg" alt="twitter" aria-label="Siga o Twitter da ATBR"></span></a>
             </div>
         </div>
 
@@ -168,8 +183,9 @@
         </div>
                 
         <div class="criado">
-            <p>Criado por <a href="https://github.com/MatheusBaganha" target="_blank" aria-label="Github do criador">Matheus Baganha.</a></p>
+            <p>Criado por <a href="https://github.com/MatheusBaganha" target="_blank" aria-label="Siga o Github do criador desse site">Matheus Baganha.</a></p>
         </div>
     </footer> 
+    <script src="script.js"></script>
 </body>
 </html>
