@@ -242,8 +242,8 @@ img {
 
 .cursos-itens {
     background-image: linear-gradient(to bottom, #E2E7FF, #d7ddee);
-    border: 1px solid #bec3dd;
-    box-shadow: 1px 1px 3px #4f5c9e54;
+    border: 1px solid #d0d4e9;
+    box-shadow: 2px 2px 5px #54597434;
     border-radius: 3px;
     padding: 40px;
     margin: 60px 30px;
@@ -331,7 +331,7 @@ img {
 
 .pergunta {
     border: 1px solid #bec3dd;
-    box-shadow: 1px 1px 3px #7485d834;
+    box-shadow: 1px 1px 6px #7683c534;
     border-radius: 3px;
     background-color: #E2E7FF;
     flex: 1 1 auto;
@@ -349,7 +349,6 @@ img {
 .pergunta-lista {
     list-style: none;
 }
-
 
 .pergunta::after {
     content: url(icones/expandir-mais.svg);
@@ -457,7 +456,7 @@ label {
     text-align: start;
     font-size: 1.2rem; 
     border: 1px solid #D2D7F6;
-    box-shadow: 1px 1px 1px #c1c6e72d;
+    box-shadow: 1px 1px 3px #c1c6e72d;
     border-radius: 3px 0px 0px 3px;  
 }
 
