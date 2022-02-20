@@ -585,7 +585,6 @@ label {
 
 /*Alterações Variadas*/
 
-
 @media (min-width: 2000px) {
     .detalhe, .detalhe2 {
         display: inline;
@@ -600,18 +599,7 @@ label {
     #cursos {
         margin-left: -20px;
     }
-
-    .cursos-itens::after {
-        content: "</>";
-        display: inline-block;
-        position: absolute;
-        top: 30px;
-        right: 80px;
-        font-size: 7rem;
-        color: #AAB3E0;
-    }
 }
-
 
 @media (min-width: 1600px) {
     #sobre {
@@ -627,7 +615,7 @@ label {
     }
 
     .cursos-itens {
-        max-width: 50vw;
+        max-width: 500px;
     }
 }
 
