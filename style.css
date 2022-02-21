@@ -637,6 +637,14 @@ label {
     }
 }
 
+@media (min-width: 830px) and (max-width: 860px) {
+    .corpo2 h2 {
+        display: block;
+        padding-right: 100px;
+        
+    }
+}
+
 
 @media (min-width: 526px) and (max-width: 776px) {
     .icone-footer {
@@ -687,13 +695,6 @@ label {
         text-align: center;
     }
 }
-
-@media (min-width: 377px) and (max-width: 412px) {
-    .cursos-itens {
-     
-    }
-}
-
 
 /*Necessário sobrescrever os outros medias*/
 
