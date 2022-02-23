@@ -786,13 +786,10 @@ label {
     .cursos-itens {
         flex: 0 0 auto;
         max-width: 70vw;
-        max-height: 90vw;
+        max-height: 90vh;
         margin: 30px 53px 20px -2px;      
     }
 
-    .cursos-itens p {
-        font-size: 1em;
-    }
 
     .corpo2 p {
         margin-bottom: 100px;
