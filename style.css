@@ -270,7 +270,7 @@ img {
 
 .cursos-itens p, .cursos-itens a{
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: bold;
     color: #000834;
 }
@@ -289,6 +289,7 @@ img {
     border: 1px solid #010a3f;
     border-radius: 3px;
     box-shadow: 3px 3px 3px #4c5eb82c;
+    margin: 0 auto;
 }
 
 .corpo2 p {
@@ -876,6 +877,10 @@ label {
 
     .footer {
         margin-left: -50px;
+    }
+
+    .footer h1 {
+        margin-left: 10px;
     }
 
     .info {
