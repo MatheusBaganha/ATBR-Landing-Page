@@ -807,10 +807,11 @@ label {
     
     /*IMAGEM*/
 
+
     .imagem, .imagem2 {
         flex-direction: column;
         flex: 1 1 auto;
-        max-width: 100vw;      
+        max-width: 100vw;
     } 
 
     .imagem2 {
