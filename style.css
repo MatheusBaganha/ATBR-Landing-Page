@@ -785,8 +785,7 @@ label {
 
     .cursos-itens {
         flex: 0 0 auto;
-        max-width: 70vw;
-        max-height: 90vh;    
+        max-width: 25vw;   
         margin: 30px 53px 20px -2px;      
     }
 
