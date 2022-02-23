@@ -790,6 +790,9 @@ label {
         margin: 30px 53px 20px -2px;      
     }
 
+    .cursos-itens p {
+        font-size: calc(1em + 1vw);
+    }
 
     .corpo2 p {
         margin-bottom: 100px;
