@@ -790,6 +790,10 @@ label {
         margin: 30px 53px 20px -2px;      
     }
 
+    .cursos-itens p {
+        font-size: 1em;
+    }
+
     .corpo2 p {
         margin-bottom: 100px;
         margin-left: 0px;
@@ -880,7 +884,7 @@ label {
     }
 
     .footer h1 {
-        margin-left: 10px;
+        margin-left: 12px;
     }
 
     .info {
