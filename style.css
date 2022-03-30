@@ -345,6 +345,19 @@ img {
     padding: 30px;
     margin-bottom: 30px;
     position: relative;
+    transition: .2s;
+}
+
+@keyframes suave {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .pergunta-lista {
@@ -402,6 +415,7 @@ img {
 
 #duvidas input:checked + .pergunta p {
     display: block; 
+    animation: suave .3s forwards;
 }
 
 #duvidas input:checked + .pergunta::after {
@@ -765,10 +779,12 @@ label {
 
     .corpo p {
         margin-right: -120px;
+        font-size: 1.4rem;
     }
 
     .corpo h2 {
         padding: 10px; 
+        font-size: 2.4rem;
     }
 
     .linha {
@@ -813,6 +829,14 @@ label {
         flex: 1 1 auto;
         max-width: 100vw;
     } 
+
+    .imagem, .primeira {
+        margin: 16px auto 0 -30px;
+    }
+    
+    .primeira {
+        margin-top: 64px;
+    }
 
     .imagem2 {
         margin-bottom: 20px;
